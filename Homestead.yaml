@@ -1,0 +1,40 @@
+---
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+hostname: symfony-homestead
+name: symfony-homestead
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "~/Projects/symfony-homestead"
+      to: "/home/vagrant/symfony-homestead"
+
+sites:
+    - map: symfony.app
+      to: "/home/vagrant/symfony-homestead/web"
+      type: symfony2
+
+databases:
+    - homestead
+
+xdebug: true
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
+
