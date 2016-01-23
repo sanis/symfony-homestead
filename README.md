@@ -52,6 +52,8 @@ It comes pre-configured with the following bundles:
 
   * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
     integration
+    
+  * [**Homestead**][14]- Preapared box from Laravel developers with additionaly added xDebug.
 
 All libraries and bundles included in the Symfony Standard Edition are
 released under the MIT or BSD license.
@@ -66,3 +68,4 @@ Enjoy!
 [10]: https://symfony.com/doc/3.0/cookbook/email.html
 [11]: https://symfony.com/doc/3.0/cookbook/logging/monolog.html
 [13]: https://symfony.com/doc/3.0/bundles/SensioGeneratorBundle/index.html
+[14]: https://laravel.com/docs/5.2/homestead
